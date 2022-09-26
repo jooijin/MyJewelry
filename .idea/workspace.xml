@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.08.14] git ignore 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/dto/HelloResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/HelloControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/dto/HelloResponseDtoTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.09.26] JPA 설정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +201,7 @@
       <workItem from="1661662635041" duration="6575000" />
       <workItem from="1663721454999" duration="10000" />
       <workItem from="1663721509846" duration="48000" />
-      <workItem from="1664156704990" duration="911000" />
+      <workItem from="1664156704990" duration="2805000" />
     </task>
     <task id="LOCAL-00001" summary="[22.08.14] initial commit">
       <created>1660459733675</created>
@@ -228,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660460656992</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[22.09.26] JPA 설정">
+      <created>1664158372440</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1664158372440</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +244,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[22.08.14] initial commit" />
     <MESSAGE value="[22.08.14] git ignore 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="[22.08.14] git ignore 설정" />
+    <MESSAGE value="[22.09.26] JPA 설정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[22.09.26] JPA 설정" />
   </component>
 </project>
