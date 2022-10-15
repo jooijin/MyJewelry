@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.09.26] 기본 CRUD 만듦,, 도메인방식">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" afterDir="false" />
+    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.10.15] JPA Auditing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/PostsApiControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,29 +95,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="HelloResponseDtoTest.lombok_test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.jooijin.myJewerly.springboot.web.dto.HelloResponseDtoTest.lombok_test&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="PostsApiControllerTest.Posts_enroll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -133,6 +109,29 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.jooijin.myJewerly.springboot.web.PostsApiControllerTest.Posts_enroll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsApiControllerTest.Posts_update" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.jooijin.myJewerly.springboot.web.PostsApiControllerTest.Posts_update&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -205,10 +204,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_enroll" />
+        <item itemvalue="Gradle.PostsApiControllerTest.Posts_update" />
         <item itemvalue="Gradle.PostsApiControllerTest.Posts_enroll" />
         <item itemvalue="Gradle.PostsRepositoryTest.savePosts" />
         <item itemvalue="Gradle.HelloControllerTest.returnHelloDto" />
-        <item itemvalue="Gradle.HelloResponseDtoTest.lombok_test" />
       </list>
     </recent_temporary>
   </component>
@@ -230,6 +229,7 @@
       <workItem from="1664156704990" duration="6276000" />
       <workItem from="1664324171020" duration="74000" />
       <workItem from="1665379038414" duration="3814000" />
+      <workItem from="1665809398661" duration="3101000" />
     </task>
     <task id="LOCAL-00001" summary="[22.08.14] initial commit">
       <created>1660459733675</created>
@@ -259,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664163226510</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[22.10.15] JPA Auditing">
+      <created>1665809594414</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1665809594414</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +288,7 @@
     <MESSAGE value="[22.08.14] git ignore 설정" />
     <MESSAGE value="[22.09.26] JPA 설정" />
     <MESSAGE value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
-    <option name="LAST_COMMIT_MESSAGE" value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
+    <MESSAGE value="[22.10.15] JPA Auditing" />
+    <option name="LAST_COMMIT_MESSAGE" value="[22.10.15] JPA Auditing" />
   </component>
 </project>
