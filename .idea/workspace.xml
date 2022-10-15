@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.09.26] JPA 설정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/dto/PostsSaveRequestDto.java" afterDir="false" />
+    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.09.26] 기본 CRUD 만듦,, 도메인방식">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,30 +72,7 @@
       <recent name="com.jooijin.myJewerly.springboot" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostsRepositoryTest.savePosts">
-    <configuration name="HelloControllerTest.returnHello" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;com.jooijin.myJewerly.springboot.web.HelloControllerTest.returnHello&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.PostsRepositoryTest.BaseTimeEntity_enroll">
     <configuration name="HelloControllerTest.returnHelloDto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -131,6 +110,52 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;com.jooijin.myJewerly.springboot.web.dto.HelloResponseDtoTest.lombok_test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsApiControllerTest.Posts_enroll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.jooijin.myJewerly.springboot.web.PostsApiControllerTest.Posts_enroll&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="PostsRepositoryTest.BaseTimeEntity_enroll" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;com.jooijin.myJewerly.springboot.domain.posts.PostsRepositoryTest.BaseTimeEntity_enroll&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -179,10 +204,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_enroll" />
+        <item itemvalue="Gradle.PostsApiControllerTest.Posts_enroll" />
         <item itemvalue="Gradle.PostsRepositoryTest.savePosts" />
         <item itemvalue="Gradle.HelloControllerTest.returnHelloDto" />
         <item itemvalue="Gradle.HelloResponseDtoTest.lombok_test" />
-        <item itemvalue="Gradle.HelloControllerTest.returnHello" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +227,9 @@
       <workItem from="1661662635041" duration="6575000" />
       <workItem from="1663721454999" duration="10000" />
       <workItem from="1663721509846" duration="48000" />
-      <workItem from="1664156704990" duration="2805000" />
+      <workItem from="1664156704990" duration="6276000" />
+      <workItem from="1664324171020" duration="74000" />
+      <workItem from="1665379038414" duration="3814000" />
     </task>
     <task id="LOCAL-00001" summary="[22.08.14] initial commit">
       <created>1660459733675</created>
@@ -224,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664158372440</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="[22.09.26] 기본 CRUD 만듦,, 도메인방식">
+      <created>1664163226510</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1664163226510</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,6 +280,7 @@
     <MESSAGE value="[22.08.14] initial commit" />
     <MESSAGE value="[22.08.14] git ignore 설정" />
     <MESSAGE value="[22.09.26] JPA 설정" />
-    <option name="LAST_COMMIT_MESSAGE" value="[22.09.26] JPA 설정" />
+    <MESSAGE value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
+    <option name="LAST_COMMIT_MESSAGE" value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
   </component>
 </project>
