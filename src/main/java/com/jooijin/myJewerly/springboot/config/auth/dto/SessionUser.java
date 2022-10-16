@@ -1,6 +1,6 @@
 package com.jooijin.myJewerly.springboot.config.auth.dto;
 
-import com.jooijin.myJewerly.springboot.domain.user.User;
+import com.jooijin.myJewerly.springboot.domain.user.Users;
 import lombok.Getter;
 
 import java.io.Serializable;
@@ -12,10 +12,10 @@ public class SessionUser implements Serializable {
     private String email;
     private String picture;
 
-    public SessionUser(User user) {
-        this.name = user.getName();
-        this.email = user.getEmail();
-        this.picture = user.getPicture();
+    public SessionUser(Users users) {
+        this.name = users.getName();
+        this.email = users.getEmail();
+        this.picture = users.getPicture();
     }
 
 }

@@ -2,7 +2,7 @@ package com.jooijin.myJewerly.springboot.config.auth;
 
 import com.jooijin.myJewerly.springboot.config.auth.dto.OAuthAttributes;
 import com.jooijin.myJewerly.springboot.config.auth.dto.SessionUser;
-import com.jooijin.myJewerly.springboot.domain.user.User;
+import com.jooijin.myJewerly.springboot.domain.user.Users;
 import com.jooijin.myJewerly.springboot.domain.user.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -35,23 +35,23 @@ public class CustomOAuth2UserService implements OAuth2UserService<OAuth2UserRequ
 
         OAuthAttributes attributes = OAuthAttributes.of(registrationId, userNameAttributeName, oAuth2User.getAttributes());
 
-        User user = saveOrUpdate(attributes);
+        Users users = saveOrUpdate(attributes);
 
-        httpSession.setAttribute("user", new SessionUser(user));
+        httpSession.setAttribute("user", new SessionUser(users));
 
-        return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(user.getRoleKey())),
+        return new DefaultOAuth2User(Collections.singleton(new SimpleGrantedAuthority(users.getRoleKey())),
                 attributes.getAttributes(),
                 attributes.getNameAttributeKey());
 
     }
 
-    private User saveOrUpdate(OAuthAttributes attributes) {
+    private Users saveOrUpdate(OAuthAttributes attributes) {
 
-        User user = userRepository.findByEmail(attributes.getEmail())
+        Users users = userRepository.findByEmail(attributes.getEmail())
                 .map(entity -> entity.update(attributes.getName(), attributes.getPicture()))
                 .orElse(attributes.toEntity());
 
-        return userRepository.save(user);
+        return userRepository.save(users);
     }
 
 }

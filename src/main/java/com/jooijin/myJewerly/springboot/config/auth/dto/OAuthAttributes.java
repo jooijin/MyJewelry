@@ -1,7 +1,7 @@
 package com.jooijin.myJewerly.springboot.config.auth.dto;
 
 import com.jooijin.myJewerly.springboot.domain.user.Role;
-import com.jooijin.myJewerly.springboot.domain.user.User;
+import com.jooijin.myJewerly.springboot.domain.user.Users;
 import lombok.Builder;
 import lombok.Getter;
 
@@ -26,6 +26,11 @@ public class OAuthAttributes {
     }
 
     public static OAuthAttributes of(String registrationId, String userNameAttributesName, Map<String, Object> attributes) {
+
+        if("naver".equals(registrationId)) {
+            return ofNaver("id", attributes);
+        }
+
         return ofGoogle(userNameAttributesName, attributes);
     }
 
@@ -39,8 +44,20 @@ public class OAuthAttributes {
                 .build();
     }
 
-    public User toEntity() {
-        return User.builder()
+    private static OAuthAttributes ofNaver(String userNameAttributeName, Map<String, Object> attributes) {
+        Map<String, Object> response = (Map<String, Object>) attributes.get("response");
+
+        return OAuthAttributes.builder()
+                .name((String) response.get("name"))
+                .email((String) response.get("email"))
+                .picture((String) response.get("profile_image"))
+                .attributes(response)
+                .nameAttributeKey(userNameAttributeName)
+                .build();
+    }
+
+    public Users toEntity() {
+        return Users.builder()
                 .name(name)
                 .email(email)
                 .picture(picture)
