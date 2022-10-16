@@ -4,21 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.10.15] JPA Auditing 오류수정">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/IndexControllerTest.java" afterDir="false" />
+    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.10.16] 머스테치 화면 구성">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application-oauth.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -242,7 +231,7 @@
       <workItem from="1665379038414" duration="3814000" />
       <workItem from="1665809398661" duration="4092000" />
       <workItem from="1665813563262" duration="7043000" />
-      <workItem from="1665900816126" duration="751000" />
+      <workItem from="1665900816126" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="[22.08.14] initial commit">
       <created>1660459733675</created>
@@ -286,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665812907995</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[22.10.16] 머스테치 화면 구성">
+      <created>1665905951766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665905951766</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +306,7 @@
     <MESSAGE value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
     <MESSAGE value="[22.10.15] JPA Auditing" />
     <MESSAGE value="[22.10.15] JPA Auditing 오류수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="[22.10.15] JPA Auditing 오류수정" />
+    <MESSAGE value="[22.10.16] 머스테치 화면 구성" />
+    <option name="LAST_COMMIT_MESSAGE" value="[22.10.16] 머스테치 화면 구성" />
   </component>
 </project>
