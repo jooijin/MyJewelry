@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.10.15] JPA Auditing">
+    <list default="true" id="2cd83633-5d15-4515-a927-6521b955de82" name="Changes" comment="[22.10.15] JPA Auditing 오류수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/dto/PostsListResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/footer.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/header.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-save.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/posts-update.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/IndexControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/BaseTimeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/Posts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/PostsApiControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/jooijin/myJewerly/springboot/web/PostsApiControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/domain/posts/PostsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/service/posts/PostsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jooijin/myJewerly/springboot/web/PostsApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
@@ -58,7 +69,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;spring.configuration.checksum&quot;: &quot;7e0a3b70ba2a544bbb2392c92e6d734a&quot;
   }
 }</component>
@@ -71,8 +82,8 @@
       <recent name="com.jooijin.myJewerly.springboot" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.PostsRepositoryTest.BaseTimeEntity_enroll">
-    <configuration name="HelloControllerTest.returnHelloDto" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Spring Boot.Application (1)">
+    <configuration name="IndexControllerTest.MainPageLoading" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -85,7 +96,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;com.jooijin.myJewerly.springboot.web.HelloControllerTest.returnHelloDto&quot;" />
+            <option value="&quot;com.jooijin.myJewerly.springboot.web.IndexControllerTest.MainPageLoading&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -203,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.IndexControllerTest.MainPageLoading" />
         <item itemvalue="Gradle.PostsRepositoryTest.BaseTimeEntity_enroll" />
         <item itemvalue="Gradle.PostsApiControllerTest.Posts_update" />
         <item itemvalue="Gradle.PostsApiControllerTest.Posts_enroll" />
         <item itemvalue="Gradle.PostsRepositoryTest.savePosts" />
-        <item itemvalue="Gradle.HelloControllerTest.returnHelloDto" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +240,9 @@
       <workItem from="1664156704990" duration="6276000" />
       <workItem from="1664324171020" duration="74000" />
       <workItem from="1665379038414" duration="3814000" />
-      <workItem from="1665809398661" duration="3101000" />
+      <workItem from="1665809398661" duration="4092000" />
+      <workItem from="1665813563262" duration="7043000" />
+      <workItem from="1665900816126" duration="751000" />
     </task>
     <task id="LOCAL-00001" summary="[22.08.14] initial commit">
       <created>1660459733675</created>
@@ -266,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665809594414</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[22.10.15] JPA Auditing 오류수정">
+      <created>1665812907995</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1665812907995</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +309,7 @@
     <MESSAGE value="[22.09.26] JPA 설정" />
     <MESSAGE value="[22.09.26] 기본 CRUD 만듦,, 도메인방식" />
     <MESSAGE value="[22.10.15] JPA Auditing" />
-    <option name="LAST_COMMIT_MESSAGE" value="[22.10.15] JPA Auditing" />
+    <MESSAGE value="[22.10.15] JPA Auditing 오류수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="[22.10.15] JPA Auditing 오류수정" />
   </component>
 </project>
