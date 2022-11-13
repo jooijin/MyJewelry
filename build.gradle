@@ -40,6 +40,8 @@ dependencies {
     testImplementation('org.springframework.security:spring-security-test')
 }
 
-manifest {
-    attributes 'Main-Class': 'com.jooijin.myJewelry'
+jar {
+    manifest {
+        attributes 'Main-Class': 'com.jooijin.myJewelry.springboot.Application'
+    }
 }
