@@ -19,5 +19,3 @@ notifications:
   email:
     recipients:
       - jooijin1@gmail.com
-
-# Build Test
