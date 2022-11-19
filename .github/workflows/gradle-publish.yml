@@ -42,6 +42,10 @@ jobs:
       - name: Copy appspec
         run: cp appspec.yml ./deploy/
 
+      # deploy.sh Copy
+      - name: Copy deploy script
+        run: cp scripts/*.sh ./deploy
+
         # 파일 압축
       - name: Make zip file
         run: zip -r ./myjewelry-springboot-webservice.zip ./deploy
